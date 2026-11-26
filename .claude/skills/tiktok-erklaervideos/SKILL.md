@@ -89,7 +89,7 @@ _Neueste Einträge oben._
 - Neue Regel: Für Kinder eine **echt klingende, warme Stimme**: „Carlotta – Children's Stories“ (`hSzY2zmYNQPukJaIll7k`), Modell `eleven_v4` mit Tags wie [excited], [whispering], [warmly].
 - Hinweis: Die Bilder kommen als 16:9 (1280×720). Sie werden in der Mitte scharf gezeigt (oben/unten weich ausgeblendet), dahinter liegt eine unscharfe Kopie. Der Gratis-Plan erlaubt nur ca. 3 Bilder pro Tag, deshalb Bilder mehrfach mit anderem Zoom nutzen.
 - Vorlage: `videos/oktopus/` (33 s). Bausteine `shot`, `S`, `heart`, `pulseRings`, `ecg`, `coin`, `speech`, `qmark`. Rendern braucht `--allow-file-access-from-files` (steht in `render.js`).
-- Ob der User den Anime-Stil mag, steht noch aus.
+- Feedback: „Ja gut gefällt mir“ → **Anime-Stil mit Carlotta-Stimme ist bestätigt** und ist der Standard für Kindervideos.
 
 ### 2026-11-26 (YouTube Shorts)
 - Feedback: „Ich will die Videos auf Youtube shorts uploaden.“ und „Erstell mir ein Video mit: Den Irrtum als Titel nehmen, z. B. ‚Handy über Nacht laden macht den Akku kaputt‘“
