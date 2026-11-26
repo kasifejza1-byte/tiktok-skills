@@ -83,6 +83,14 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-26 (Kinder-Anime Oktopus)
+- Auftrag: „Kannst du mir ein anime Video machen? So ca 30 40 Sekunden. Für kinder mit einer freundlichen Stimme die wie echt klingt. Thema kannst du dir selbst aussuchen soll aber sehr interessant sein für kinder“
+- Neue Regel: Es gibt einen **Anime-Stil** für Kindervideos. Bilder kommen von ElevenLabs (`gpt-image-2.5-sunburst`, Ghibli-artiger Anime-Look, ein festes Maskottchen in jedem Prompt gleich beschreiben, „No text“). Die Bilder werden im Canvas bewegt (Zoom, Schwenk, Wackeln) und mit Comic-Texten, Leuchten, Herzschlag-Ringen, Glitzer und Blasen überlagert.
+- Neue Regel: Für Kinder eine **echt klingende, warme Stimme**: „Carlotta – Children's Stories“ (`hSzY2zmYNQPukJaIll7k`), Modell `eleven_v4` mit Tags wie [excited], [whispering], [warmly].
+- Hinweis: Die Bilder kommen als 16:9 (1280×720). Sie werden in der Mitte scharf gezeigt (oben/unten weich ausgeblendet), dahinter liegt eine unscharfe Kopie. Der Gratis-Plan erlaubt nur ca. 3 Bilder pro Tag, deshalb Bilder mehrfach mit anderem Zoom nutzen.
+- Vorlage: `videos/oktopus/` (33 s). Bausteine `shot`, `S`, `heart`, `pulseRings`, `ecg`, `coin`, `speech`, `qmark`. Rendern braucht `--allow-file-access-from-files` (steht in `render.js`).
+- Ob der User den Anime-Stil mag, steht noch aus.
+
 ### 2026-11-26 (YouTube Shorts)
 - Feedback: „Ich will die Videos auf Youtube shorts uploaden.“ und „Erstell mir ein Video mit: Den Irrtum als Titel nehmen, z. B. ‚Handy über Nacht laden macht den Akku kaputt‘“
 - Neue Regel: Videos werden auch auf **YouTube Shorts** hochgeladen. Zu jedem Video gehört ein **Titel = der Irrtum** plus „❌ #shorts“, z. B. „Handy über Nacht laden macht den Akku kaputt? ❌ #shorts“. Den Titel immer mitliefern.
