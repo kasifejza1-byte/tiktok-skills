@@ -83,6 +83,12 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-26 (YouTube Shorts)
+- Feedback: „Ich will die Videos auf Youtube shorts uploaden.“ und „Erstell mir ein Video mit: Den Irrtum als Titel nehmen, z. B. ‚Handy über Nacht laden macht den Akku kaputt‘“
+- Neue Regel: Videos werden auch auf **YouTube Shorts** hochgeladen. Zu jedem Video gehört ein **Titel = der Irrtum** plus „❌ #shorts“, z. B. „Handy über Nacht laden macht den Akku kaputt? ❌ #shorts“. Den Titel immer mitliefern.
+- Upload-Tipps: 1 Short pro Tag, Original-Datei ohne TikTok-Wasserzeichen, alle Folgen in eine Playlist „Fünf Technik-Irrtümer“.
+- Video: `videos/akku-nacht/` (38 s).
+
 ### 2026-11-26 (Kinder-Video Popcorn)
 - Auftrag: „Erstelle mir jetzt ein Video 30–40 Sekunden für Kinder zwischen 6–12 Jahre. Entscheide du was du machst. Es soll auf jeden Fall sehr anlockend für Kinder sein.“
 - Neue Regel: Es gibt eine **Kinder-Variante** (6–12 Jahre). Dafür gelten Abschnitt 3 (Mythos-Hook), 5 (Marineblau, Strichmännchen) und die Serienkarte **nicht**. Stattdessen:
