@@ -95,6 +95,7 @@ _Neueste Einträge oben._
 2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
+4b. **Zu lange Aufnahme:** Pausen auf ca. 0,18 s kürzen und mit `atempo` (max. ca. 1,15) beschleunigen, siehe `videos/flugzeug-redundanz/cut.py` (40,6 s → 31,3 s). Fertige Videos liegen unter `videos/<thema>/`.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
 
 <!-- Format:
