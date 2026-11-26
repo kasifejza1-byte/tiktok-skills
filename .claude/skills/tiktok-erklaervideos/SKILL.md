@@ -83,6 +83,10 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-26 (Flugzeug-Video)
+- Feedback: „mir wäre lieber bisschen langsamer sprechen. also mach das video auf 40 sekunden wieder. dann sehe ich mir das an und sage dir ob du die geschwindigkeit für immer beibehalten sollst“
+- Neue Regel (vorläufig): Stimme nicht beschleunigen, normales ElevenLabs-Tempo (Faktor 1,0). Nur die Pause am Anfang kürzen. Lieber ein längeres Video als schnelles Sprechen. Der User entscheidet noch, ob das dauerhaft gilt.
+
 ### 2026-11-26
 - Feedback: „mach mir jetzt ein Video, dass 30 Sekunden ungefähr dauert … mit Untertitel … mach es so wie die Videos, die ich dir geschickt habe. So gut wie möglich animieren!“ (Vorlage: Skript „Dein Handy ist nicht wirklich aus“)
 - Neue Regel: Zielänge ca. 30 s statt 75 s.
@@ -95,7 +99,7 @@ _Neueste Einträge oben._
 2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
-4b. **Zu lange Aufnahme:** Pausen auf ca. 0,18 s kürzen und mit `atempo` (max. ca. 1,15) beschleunigen, siehe `videos/flugzeug-redundanz/cut.py` (40,6 s → 31,3 s). Fertige Videos liegen unter `videos/<thema>/`.
+4b. **Zu lange Aufnahme:** Pausen auf ca. 0,18 s kürzen und nur nach Rücksprache mit `atempo` beschleunigen (siehe Feedback 2026-11-26: User mag langsameres Sprechen), siehe `videos/flugzeug-redundanz/cut.py` (40,6 s → 31,3 s). Fertige Videos liegen unter `videos/<thema>/`.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
 
 <!-- Format:
