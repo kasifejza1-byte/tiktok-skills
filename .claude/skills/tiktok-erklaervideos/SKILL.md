@@ -83,6 +83,18 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-26 (Kinder-Video Popcorn)
+- Auftrag: „Erstelle mir jetzt ein Video 30–40 Sekunden für Kinder zwischen 6–12 Jahre. Entscheide du was du machst. Es soll auf jeden Fall sehr anlockend für Kinder sein.“
+- Neue Regel: Es gibt eine **Kinder-Variante** (6–12 Jahre). Dafür gelten Abschnitt 3 (Mythos-Hook), 5 (Marineblau, Strichmännchen) und die Serienkarte **nicht**. Stattdessen:
+  - Hook = verblüffende Behauptung („In jedem Maiskorn steckt eine Dampfbombe!“), kein Irrtum.
+  - Ein süßes Maskottchen mit großen Augen, Bäckchen und Ärmchen ist die Hauptfigur.
+  - Knallige Farben (Lila-Verlauf, drehende Strahlen, Glitzer), Comic-Texte mit dicker Kontur, Wackel- und Pop-Animationen, Konfetti beim Höhepunkt.
+  - Untertitel Wort für Wort, dabei abwechselnd gelb, pink, cyan und grün mit Hüpf-Effekt.
+  - Ein klarer „Wow“-Moment (z. B. PLOPP mit Blitz und Wackeln) in der Mitte.
+  - Ende: Mitmach-Frage für die Kommentare („süß oder salzig?“) statt Cliffhanger.
+- Vorlage: `videos/popcorn/anim.html` (Bausteine `kernel`, `popcornShape`, `comic`, `burst`, `confetti`, `gauge`, `thermo`, `bowl`).
+- Ob der User diesen Stil mag, steht noch aus.
+
 ### 2026-11-26 (Flugzeug-Video)
 - Feedback: „mir wäre lieber bisschen langsamer sprechen. also mach das video auf 40 sekunden wieder. dann sehe ich mir das an und sage dir ob du die geschwindigkeit für immer beibehalten sollst“
 - Neue Regel (vorläufig): Stimme nicht beschleunigen, normales ElevenLabs-Tempo (Faktor 1,0). Nur die Pause am Anfang kürzen. Lieber ein längeres Video als schnelles Sprechen. Der User entscheidet noch, ob das dauerhaft gilt.
