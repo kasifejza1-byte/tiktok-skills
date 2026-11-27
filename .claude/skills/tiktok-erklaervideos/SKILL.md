@@ -83,6 +83,10 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-27 (Stimme)
+- Feedback: „Die Stimme gefällt mir nicht. Nimm die von Mark die deutsche weißt du“
+- Geänderte Regel: Neue Standardstimme ist **„Mark – Sprecher für Socialmedia (TikTok, Instagram), tiefe Stimme, junger Mann“** (`xj61lbryotizgwAuHImw`). Leon nicht mehr verwenden. Falls der User einen anderen „Mark“ meinte, hier korrigieren.
+
 ### 2026-11-27 (YouTube Short 10–15 s)
 - Feedback: „Erstelle mir ein Youtube short. Ca 10 15 Sekunden. Was denkst du für Thema wäre sehr interessant zu wissen in dieser zeit? Fang auch bei dem video dann an mit: halt stop scrollen nicht weiter.. oder so irgendwas das die nicht weiter scrollen“
 - Neue Regel: Es gibt eine **Kurz-Variante für YouTube Shorts: 10–15 s** (ca. 35 Wörter). Dafür entfallen Serienkarte, Beweis-Geschichte und Cliffhanger. Ablauf: Stopp-Hook → Mythos → „Falsch!“ → Mechanismus in einem Bild → 1–2 Zahlen → Pointe.
@@ -120,8 +124,9 @@ _Neueste Einträge oben._
 - Neue Regel: Fakten im Skript des Users vor der Produktion prüfen und korrigieren, dann dem User sagen, was geändert wurde.
 
 ## 10. Produktions-Pipeline (bewährt)
-1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
-2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
+1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Mark – Sprecher für Socialmedia“ (`xj61lbryotizgwAuHImw`) (geändert 2026-11-27, siehe Feedback; vorher Leon `KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
+2. **Wort-Timing (besser):** Aufnahme mit `creative_transcribe_audio` (Scribe, kostet 0 Credits) transkribieren und die Wortzeiten auf die geschnittene Aufnahme umrechnen, siehe `videos/heizung-stufe5/words.py`. Neue Stimme bei fertiger Animation: Zeit-Warp in `render(t)` statt alle Zeiten umzuschreiben (siehe `anim.html`, `WARP`).
+2b. **Wort-Timing (alt):** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
 4b. **Zu lange Aufnahme:** Pausen auf ca. 0,18 s kürzen und nur nach Rücksprache mit `atempo` beschleunigen (siehe Feedback 2026-11-26: User mag langsameres Sprechen), siehe `videos/flugzeug-redundanz/cut.py` (40,6 s → 31,3 s). Fertige Videos liegen unter `videos/<thema>/`.

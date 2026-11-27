@@ -385,13 +385,16 @@ function sceneCost(t){ // 12.62 - end
   pill('TIPP: AUF 3 LASSEN ✓',W/2,1370,{...popA(t,13.45),col:GREEN,size:44});
 }
 const SCENES=[[0,2.25,sceneStop],[2.25,5.65,sceneMyth],[5.65,7.6,sceneZoom],[7.6,11.3,sceneNumbers],[11.3,12.62,sceneSame],[12.62,99,sceneCost]];
-const END=14.6;
-function render(t){
+const END=16.0;
+// Zeit-Warp: Szenen wurden auf die erste Aufnahme getimt; [neue Zeit, alte Szenenzeit]
+const WARP=[[0,0],[0.30,0.50],[0.94,1.06],[1.97,2.30],[3.30,3.45],[4.25,4.0],[5.26,5.12],[5.91,5.74],[7.15,6.82],[8.27,7.66],[9.49,8.6],[10.45,9.52],[11.55,10.34],[12.77,11.38],[14.43,12.70],[16.0,14.5]];
+function warp(t){for(let i=1;i<WARP.length;i++){const [a,A]=WARP[i-1],[b,B]=WARP[i];if(t<=b)return A+(B-A)*(t-a)/(b-a);}return t-WARP[WARP.length-1][0]+WARP[WARP.length-1][1];}
+function render(tReal){const t=warp(tReal);
   x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;x.clearRect(0,0,W,H);SHAKE=[0,0];
   let i=SCENES.findIndex(s=>t>=s[0]&&t<s[1]);if(i<0)i=SCENES.length-1;
   const [a,b,f]=SCENES[i];x.save();f(t);x.restore();
   if(i>0&&t-a<0.2){x=bufX;x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;x.save();SCENES[i-1][2](a-0.001);x.restore();x=mainX;x.save();x.globalAlpha=1-eo((t-a)/0.2);x.drawImage(buf,0,0);x.restore();}
-  x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;caption(t);
+  x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;caption(tReal);
   x.globalAlpha=0.55;txt('AI-generated',W-30,H-60,22,'#9AA5BF',600,'right');x.globalAlpha=1;
 }
 window.render=render;
