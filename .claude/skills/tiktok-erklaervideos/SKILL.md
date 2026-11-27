@@ -15,7 +15,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 - Löse dich nie stillschweigend von einer Regel. Wenn eine Regel für eine Idee nicht passt, sag es und frag nach.
 
 ## 1. Format und Länge
-- **Länge: ca. 30 s** (geändert 2026-11-26, siehe Feedback), also ca. 70–80 Wörter Sprechtext und ca. 1 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
+- **Länge: ca. 30–40 s** (geändert 2026-11-26 und 2026-11-27, siehe Feedback), also ca. 70–80 Wörter Sprechtext und ca. 1 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
 - **Hochformat 9:16**, Sicherheitsabstand oben (Titelzeile) und rechts (TikTok-Buttons).
 - **Serienformat:** „Fünf Technik-Irrtümer“ (oder ein anderes Fünfer-Thema). Jedes Video ist **eine Folge x/5** und behandelt **genau einen** Irrtum.
 - Eine Folge = eine Kernaussage. Keine Nebenthemen.
@@ -82,6 +82,12 @@ Ein Thema eignet sich, wenn:
 
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
+
+### 2026-11-27
+- Feedback: „Erstelle mir ein Youtube short. Ich will sehen was passiert wenn man Alkohol trinkt und wie der Körper reagiert wenn man besoffen ist. 30 Sekunden video oder 40 ist egal“
+- Neue Regel: Auch Körper-/Gesundheitsthemen sind erlaubt, nicht nur Alltagstechnik. Serientitel dann „Körper-Geheimnisse“, gleicher Stil.
+- Neue Regel: Länge 30–40 s ist okay. Videos sind auch für YouTube Shorts (gleiches 9:16-Format).
+- Neue Regel: Fertige Videos samt Code unter `videos/<thema>/` im Repo ablegen.
 
 ### 2026-11-26
 - Feedback: „mach mir jetzt ein Video, dass 30 Sekunden ungefähr dauert … mit Untertitel … mach es so wie die Videos, die ich dir geschickt habe. So gut wie möglich animieren!“ (Vorlage: Skript „Dein Handy ist nicht wirklich aus“)
