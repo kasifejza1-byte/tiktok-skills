@@ -84,6 +84,8 @@ Ein Thema eignet sich, wenn:
 _Neueste Einträge oben._
 
 ### 2026-11-27
+- Feedback: „Kannst du das ein bisschen schneller reden lassen? Ein bisschen nur schneller reden.“ (Feuerzeug-Video)
+- Neue Regel: Sprechtempo ca. 10 % schneller als die Rohaufnahme. Beim Rendern `SPEED=1.1 node render.js full <Dauer>` nutzen (ffmpeg `atempo`, Tonhöhe bleibt, Animation läuft mit).
 - Feedback: „Erstelle mir ein 30 Sekunden video bzw bis 50 Sekunden geht“
 - Geänderte Regel: Zielänge ca. 30 s, bis 50 s ist erlaubt, wenn der Inhalt es braucht.
 - Neue Regel: Der User kann Wikipedia-Texte oder -Links als Vorlage geben. Text in eigenen Worten neu schreiben, Quelle „Wikipedia“ in der Kopfzeile.
@@ -100,6 +102,7 @@ _Neueste Einträge oben._
 ## 10. Produktions-Pipeline (bewährt)
 1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Daniel – Podcast Host“ (`gcLIEwSq4uMjxUh2VRdv`) (geändert 2026-11-27, siehe Feedback). Früher: „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Hörproben in `hoerproben/`. Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
 2. **Wort-Timing:** Am genauesten: Audio per ElevenLabs Scribe (`creative_attach_reference_file` + `creative_transcribe_audio`) transkribieren, das liefert Start/Ende pro Wort. Notlösung: Satzpausen mit `ffmpeg silencedetect` (−25 bis −35 dB, 0,1 s) finden und Wörter nach Buchstabenzahl verteilen (Daniel spricht mit wenig Pausen).
+2b. **Tempo:** Immer mit `SPEED=1.1` rendern (geändert 2026-11-27, siehe Feedback).
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
