@@ -15,7 +15,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 - Löse dich nie stillschweigend von einer Regel. Wenn eine Regel für eine Idee nicht passt, sag es und frag nach.
 
 ## 1. Format und Länge
-- **Länge: ca. 30 s** (geändert 2026-11-26, siehe Feedback), also ca. 70–80 Wörter Sprechtext und ca. 1 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
+- **Länge: ca. 30 s, bis 50 s ist okay** (geändert 2026-11-27, siehe Feedback), also ca. 70–115 Wörter Sprechtext und ca. 1 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
 - **Hochformat 9:16**, Sicherheitsabstand oben (Titelzeile) und rechts (TikTok-Buttons).
 - **Serienformat:** „Fünf Technik-Irrtümer“ (oder ein anderes Fünfer-Thema). Jedes Video ist **eine Folge x/5** und behandelt **genau einen** Irrtum.
 - Eine Folge = eine Kernaussage. Keine Nebenthemen.
@@ -84,6 +84,9 @@ Ein Thema eignet sich, wenn:
 _Neueste Einträge oben._
 
 ### 2026-11-27
+- Feedback: „Erstelle mir ein 30 Sekunden video bzw bis 50 Sekunden geht“
+- Geänderte Regel: Zielänge ca. 30 s, bis 50 s ist erlaubt, wenn der Inhalt es braucht.
+- Neue Regel: Der User kann Wikipedia-Texte oder -Links als Vorlage geben. Text in eigenen Worten neu schreiben, Quelle „Wikipedia“ in der Kopfzeile.
 - Feedback: „Ok speichere die Stimme“ (nach Hörprobe von „Daniel – Podcast Host“)
 - Geänderte Regel: Standardstimme ist jetzt „Daniel – Podcast Host“ (`gcLIEwSq4uMjxUh2VRdv`) statt Leon.
 
