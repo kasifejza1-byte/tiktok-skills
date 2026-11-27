@@ -90,6 +90,7 @@ _Neueste Einträge oben._
 - Hinweis: Die Bilder kommen als 16:9 (1280×720). Sie werden in der Mitte scharf gezeigt (oben/unten weich ausgeblendet), dahinter liegt eine unscharfe Kopie. Der Gratis-Plan erlaubt nur ca. 3 Bilder pro Tag, deshalb Bilder mehrfach mit anderem Zoom nutzen.
 - Vorlage: `videos/oktopus/` (33 s). Bausteine `shot`, `S`, `heart`, `pulseRings`, `ecg`, `coin`, `speech`, `qmark`. Rendern braucht `--allow-file-access-from-files` (steht in `render.js`).
 - Feedback: „Ja gut gefällt mir“ → **Anime-Stil mit Carlotta-Stimme ist bestätigt** und ist der Standard für Kindervideos.
+- Zweites Video: `videos/delfin/` (32,7 s, „Delfine schlafen mit einem offenen Auge“). Das Bildlimit erlaubte nur 1 Bild, der Rest ist im Canvas gezeichnet (Bausteine `brain`, `calendar`, `spray`, `dim`). Bei wenigen Bildern: 1 gutes Bild + gezeichnete Infografik-Elemente reicht.
 
 ### 2026-11-26 (YouTube Shorts)
 - Feedback: „Ich will die Videos auf Youtube shorts uploaden.“ und „Erstell mir ein Video mit: Den Irrtum als Titel nehmen, z. B. ‚Handy über Nacht laden macht den Akku kaputt‘“
