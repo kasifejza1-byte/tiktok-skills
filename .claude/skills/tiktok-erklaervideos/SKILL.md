@@ -127,6 +127,7 @@ _Neueste Einträge oben._
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
 4b. **Zu lange Aufnahme:** Pausen auf ca. 0,18 s kürzen und nur nach Rücksprache mit `atempo` beschleunigen (siehe Feedback 2026-11-26: User mag langsameres Sprechen), siehe `videos/flugzeug-redundanz/cut.py` (40,6 s → 31,3 s). Fertige Videos liegen unter `videos/<thema>/`.
+4c. **Illusions-Videos:** Vorlage `videos/augen-schatten/` (34 s, Schachbrett-Schatten-Illusion). Die Illusion wird echt im Canvas gezeichnet (Pixel für Pixel, Feld A und B exakt gleicher Grauwert: hell 230 × Schatten 0,5 = dunkel 115). Beweis: Balken in derselben Farbe verbindet A und B, danach Rest abdunkeln. Serie „Fünf Augen-Irrtümer“, Serienkarte als kleines „1/5“-Badge oben links statt eigener Szene.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
 
 <!-- Format:
