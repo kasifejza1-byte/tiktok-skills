@@ -84,6 +84,8 @@ Ein Thema eignet sich, wenn:
 _Neueste Einträge oben._
 
 ### 2026-11-27
+- Feedback: „Oke die Geschwindigkeit gefällt mir“
+- Bestätigt: `SPEED=1.1` ist das richtige Tempo.
 - Feedback: „Kannst du das ein bisschen schneller reden lassen? Ein bisschen nur schneller reden.“ (Feuerzeug-Video)
 - Neue Regel: Sprechtempo ca. 10 % schneller als die Rohaufnahme. Beim Rendern `SPEED=1.1 node render.js full <Dauer>` nutzen (ffmpeg `atempo`, Tonhöhe bleibt, Animation läuft mit).
 - Feedback: „Erstelle mir ein 30 Sekunden video bzw bis 50 Sekunden geht“
