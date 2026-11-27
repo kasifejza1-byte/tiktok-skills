@@ -83,6 +83,13 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-27 (YouTube Short 10–15 s)
+- Feedback: „Erstelle mir ein Youtube short. Ca 10 15 Sekunden. Was denkst du für Thema wäre sehr interessant zu wissen in dieser zeit? Fang auch bei dem video dann an mit: halt stop scrollen nicht weiter.. oder so irgendwas das die nicht weiter scrollen“
+- Neue Regel: Es gibt eine **Kurz-Variante für YouTube Shorts: 10–15 s** (ca. 35 Wörter). Dafür entfallen Serienkarte, Beweis-Geschichte und Cliffhanger. Ablauf: Stopp-Hook → Mythos → „Falsch!“ → Mechanismus in einem Bild → 1–2 Zahlen → Pointe.
+- Neue Regel: Wenn der User es wünscht, beginnt das Video mit einem **Stopp-Hook** („Halt, stopp! Scroll nicht weiter!“) mit Stoppschild, rotem Pulsieren und Wackeln. Danach kommt sofort der Mythos (Abschnitt 3 gilt ab Satz 2).
+- Neue Regel: Themen passend zur **Jahreszeit** wählen (Ende November: Heizen).
+- Video: `videos/heizung-stufe5/` (14,6 s), Titel: „Heizung auf 5 wird schneller warm? ❌ #shorts“.
+
 ### 2026-11-26 (YouTube Shorts)
 - Feedback: „Ich will die Videos auf Youtube shorts uploaden.“ und „Erstell mir ein Video mit: Den Irrtum als Titel nehmen, z. B. ‚Handy über Nacht laden macht den Akku kaputt‘“
 - Neue Regel: Videos werden auch auf **YouTube Shorts** hochgeladen. Zu jedem Video gehört ein **Titel = der Irrtum** plus „❌ #shorts“, z. B. „Handy über Nacht laden macht den Akku kaputt? ❌ #shorts“. Den Titel immer mitliefern.
