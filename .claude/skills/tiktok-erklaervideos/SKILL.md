@@ -83,6 +83,13 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-27 (Viral-Short Akku-Kälte)
+- Auftrag: „Überleg jetzt richtig gut !!! Mach mir ein Video wo ich wirklich 5000 aufrufen kriegen werde!!! Lass es natürlich werden dass alle nicht weiter scrollen!“
+- Neue Regel (Viral-Checkliste für Shorts): Das Thema muss (1) etwas sein, das **gerade jetzt fast jeder selbst erlebt** (Jahreszeit), (2) einen **Aha-Moment** haben („nicht kaputt, nur kalt“), (3) **sofort ausprobierbar** sein und (4) einen **Teilen-Grund** haben („Schick das dem, der …“ am Ende).
+- Neue Regel: Der Stopp-Hook wirkt natürlich, wenn direkt nach „Stopp!“ die **Situation des Zuschauers als Frage** kommt („Dein Handy geht bei 20 % einfach aus?“) und Frame 1 genau diese Situation zeigt.
+- Neue Regel: Eine **niedliche Hauptfigur aus dem Gerät** (Akku mit Gesicht, Mütze, Schal, klappernden Zähnen) erzeugt den lustigen Moment.
+- Video: `videos/akku-kaelte/` (14,8 s), Titel: „Handy geht bei 20 % aus? Akku kaputt? ❌ #shorts“.
+
 ### 2026-11-27 (Stimme)
 - Feedback: „Die Stimme gefällt mir nicht. Nimm die von Mark die deutsche weißt du“
 - Geänderte Regel: Neue Standardstimme ist **„Mark – Sprecher für Socialmedia (TikTok, Instagram), tiefe Stimme, junger Mann“** (`xj61lbryotizgwAuHImw`). Leon nicht mehr verwenden. Falls der User einen anderen „Mark“ meinte, hier korrigieren.
