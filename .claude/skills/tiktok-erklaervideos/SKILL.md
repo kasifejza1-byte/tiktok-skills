@@ -97,8 +97,9 @@ _Neueste Einträge oben._
 - Neue Regel: Fakten im Skript des Users vor der Produktion prüfen und korrigieren, dann dem User sagen, was geändert wurde.
 
 ## 10. Produktions-Pipeline (bewährt)
-1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
-2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
+1. **Stimme:** Vorher prüfen, ob genug Credits da sind (ca. 15 Credits pro Wort-Sekunde, ~500 für 35 s). Wenn nicht, dem User Bescheid geben.
+    ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
+2. **Wort-Timing:** Besser: die Sprachdatei mit ElevenLabs `creative_transcribe_audio` (`eleven_scribe_v1`, `connect_from` = Sprach-Node im selben Flow) transkribieren. Das liefert exakte Wortzeiten und hat 0 Credits gekostet. Notlösung: Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden und Wörter nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
