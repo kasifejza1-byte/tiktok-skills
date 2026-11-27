@@ -83,6 +83,10 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-27
+- Feedback: „Ok speichere die Stimme“ (nach Hörprobe von „Daniel – Podcast Host“)
+- Geänderte Regel: Standardstimme ist jetzt „Daniel – Podcast Host“ (`gcLIEwSq4uMjxUh2VRdv`) statt Leon.
+
 ### 2026-11-26
 - Feedback: „mach mir jetzt ein Video, dass 30 Sekunden ungefähr dauert … mit Untertitel … mach es so wie die Videos, die ich dir geschickt habe. So gut wie möglich animieren!“ (Vorlage: Skript „Dein Handy ist nicht wirklich aus“)
 - Neue Regel: Zielänge ca. 30 s statt 75 s.
@@ -91,7 +95,7 @@ _Neueste Einträge oben._
 - Neue Regel: Fakten im Skript des Users vor der Produktion prüfen und korrigieren, dann dem User sagen, was geändert wurde.
 
 ## 10. Produktions-Pipeline (bewährt)
-1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
+1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Daniel – Podcast Host“ (`gcLIEwSq4uMjxUh2VRdv`) (geändert 2026-11-27, siehe Feedback). Früher: „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Hörproben in `hoerproben/`. Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
 2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
