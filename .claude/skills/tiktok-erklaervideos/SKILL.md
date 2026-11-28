@@ -74,6 +74,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 Wenn der User ein Skript will, liefere eine Tabelle mit den Spalten **Zeit | Sprechtext | Bild/Animation | Einblendung**, nach Abschnitt 2 gegliedert, plus Wortzahl und geschätzte Länge (Wörter ÷ 2,3). Danach folgen 3 alternative Hooks.
 
 ## 8. Themenfilter (Alltagstechnik)
+- (geändert 2026-11-28, siehe Feedback) Auch Psychologie-Irrtümer sind erlaubt (Serie „Fünf Psycho-Irrtümer“).
 - (geändert 2026-11-28, siehe Feedback) Auch Alltags-Tricks ohne Gerät sind erlaubt (z. B. morgens wacher werden), solange es einen belegbaren Mechanismus und einen konkreten Tipp gibt. Serie dann „Alltags-Tricks“ bzw. Kopfzeile passend zum Thema.
 Ein Thema eignet sich, wenn:
 - es ein **weit verbreiteter Irrtum oder Alltagsrat** ist (Akku, WLAN, Mikrowelle, Kühlschrank, Spülmaschine, Router, Ladegerät, Flugmodus, Standby, Bluetooth …),
@@ -83,6 +84,13 @@ Ein Thema eignet sich, wenn:
 
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
+
+### 2026-11-28 (Psycho-Serie)
+- Feedback: „Erstelle mir ein psylogisches video. Ich weis ich habe Technik in meinen skins aber egal mach das mit meine Regeln“
+- Neue Regel: Auch **Psychologie-Themen** sind erlaubt. Neue Serie **„Fünf Psycho-Irrtümer“** im normalen Strichmännchen-Stil (nicht fotorealistisch, das gilt nur für Körper-/Anatomie-Themen). Alle anderen Regeln gelten gleich (Mythos-Hook, Studie als Beweis, x/5, Cliffhanger, Daniel-Stimme, 30–40 s).
+- Geplante Folgen: 1 Wut rauslassen (fertig), 2 Nur 10 % vom Gehirn, 3 Multitasking, 4 Gegensätze ziehen sich an, 5 Linke/rechte Gehirnhälfte.
+- Video: `videos/psycho1-wut/` (38,6 s, Stimme mit Tempo 1,1). Titel: „Wut muss raus, sonst staut sie sich an? ❌ #shorts“.
+- Hinweis: Feedback aus früheren Sitzungen liegt teils auf anderen Branches (z. B. Tempo 1,1/1,15, YouTube-Titel, gepostete Folgen). Bei Gelegenheit alles in `main` zusammenführen.
 
 ### 2026-11-28 (Serie „Fünf Handy-Irrtümer“)
 - Feedback: Google-Doc mit 368 Quellen zu „Salt Typhoon“ geschickt, dann: „Mach mir alle 5 Videos“.
