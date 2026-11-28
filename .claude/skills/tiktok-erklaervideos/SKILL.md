@@ -85,6 +85,17 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Neon-Stil nach Beispielvideo)
+- Feedback: User schickt ein Beispielvideo (95 s, Querformat, Thema Langsamgeher/Gehirn): „und so solltest es du mir machen“. Antworten: Hochformat 9:16, neues Thema selbst wählen, ca. 18 Bilder okay.
+- Neue Regel **Neon-Stil** (Standard, wenn der User „so wie das Video“ will):
+  - **Bilder:** leuchtende Neon-Digital-Illustrationen (dunkles Marineblau/Schwarz, Cyan, Gold, Rot leuchtend, Partikel), KEINE feste Figur nötig. Prompt-Anfang: „Glowing neon digital illustration, vertical 9:16: …, dark navy background, cyan and gold neon glow, particles, cinematic, centered. No text, no letters.“ `gpt-image-2.5-sunburst`, 9:16, ohne Referenz (ca. 190 Credits/Bild).
+  - **Schnitt:** alle **1,5–3 s ein neues Bild**, passend zum gerade gesprochenen Wort/Satz; langsamer Zoom rein/raus, kurzer **Glitch-Übergang** (Streifen-Versatz + Blitz) bei jedem Wechsel, leichte **Scanlines, Filmkorn, Vignette**.
+  - **Untertitel:** **EIN großes Wort in der Bildmitte** (Schrift **Anton**, Großbuchstaben, 3D-Schatten, dunkle Kontur, Glow). Normale Wörter weiß-silber, Schlüsselwörter farbig (rot = falsch/warm, cyan = kühl/richtig, gelb = wichtig).
+  - Zahlen als große Leucht-Boxen (hochzählen), rotes X bei „Das stimmt nicht“.
+  - Stimme Daniel (Tempo 1,1), Musik leise (Synthwave/mysteriös), Ende mit Frage an den Zuschauer + „+ Folgen“.
+- Vorlage: `videos/gaehnen/` (`scenes.js` mit `CUTS`-Liste [Startzeit, Bild], `HOT`-Farbwörter, `bigWord`, `glitch`, `crt`, `stat`; Schrift `Anton.ttf`).
+- Video: `videos/gaehnen/` (46,4 s, 18 Bilder). Titel: „Du gähnst, weil dir Sauerstoff fehlt? ❌ #shorts“.
+
 ### 2026-11-28 (Anime für Erwachsene, 40–50 s)
 - Feedback: „…warum es einen Menschen nervt, wenn der vor ihm langsamer geht. Anime ist so richtig gut, dass man wirklich die Neugier kriegt… Und macht die Hintergrundmusik, dass man sie hört, ein bisschen. Ganz leise sollte man sie hören, aber nicht, dass sie stört. Das Video kann ruhig 40-50 Sekunden dauern.“
 - Neue Regel: **Anime-Stil auch für normale (Erwachsenen-)Videos**, wenn der User es wünscht: ElevenLabs `gpt-image-2.5-sunburst` direkt im **Format 9:16** (Node mit `aspect_ratio: 9:16` anlegen, dann ausführen), eine feste Hauptfigur, erstes Bild als Referenz für alle weiteren. Stimme bleibt Daniel. Darüber Pills, Zahlen, Wort-für-Wort-Untertitel.
