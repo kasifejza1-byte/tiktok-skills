@@ -84,7 +84,11 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
-### 2026-11-28 (Snooze-Video)
+### 2026-11-28 (Snus statt Snooze)
+- Feedback: „Ich meinte snus nicht snooz“
+- Neue Regel: Wenn ein Thema-Wort mehrdeutig klingt oder per Spracheingabe kommt (z. B. Snus/Snooze), vor der Produktion in einem Satz nachfragen, welches gemeint ist. Das Snooze-Video bleibt als Bonus in `videos/snooze/`.
+
+### 2026-11-28 (Snus-Video, zuerst falsch als Snooze verstanden)
 - Feedback: „Stelle es so dar, dass man es sieht, anatomisch, also richtig freundlich, so mit Gesicht und Haut und anatomisch halt menschlich und natürlich und echt.“
 - Neue Regel: Bei Körper-/Gesundheitsthemen statt Strichmännchen **fotorealistische, freundliche Bilder echter Menschen** (Gesicht, Haut, natürliches Licht) plus **anatomische Ansichten** (z. B. halbtransparenter Kopf mit Gehirn, Brustkorb mit Herz). Gleiche Person in allen Szenen (erstes Bild als Referenz). Darüber weiter Pills, Zahlen, Diagramme und Wort-für-Wort-Untertitel wie gewohnt. Umsetzung: ElevenLabs-Bilder + Kamerafahrten (Zoom/Schwenk) im Canvas, siehe `videos/snooze/`.
 
