@@ -85,6 +85,13 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Liebesfilm-Story)
+- Feedback: „Such dir die Story von einen liebesgfilm und mach ein Video daraus“. Auswahl des Users: Titanic, mit Psycho-Fakt am Ende.
+- Neue Regel **Film-Story-Videos**: Handlung eines bekannten Films **in eigenen Worten** kurz nacherzählen (ca. 20 s), dann Überleitung „Aber warum …? Die Psychologie hat eine Antwort.“ und ein echter Psycho-Fakt mit Studie (ca. 20 s). **Keine Schauspieler-Gesichter, keine Filmszenen nachbauen, keine Logos/Schiffsnamen im Bild**, sondern eigene Neon-Figuren (Aussehen bewusst anders als die Schauspieler). Quelle unten: „Story: Film „…“ (Jahr), frei nacherzählt · Studie: …“.
+- Psycho-Fakt hier: Hängebrücken-Experiment (Dutton & Aron 1974: wackelige Brücke 9 von 18 riefen an ≈ jeder Zweite, sichere Brücke 2 von 16 ≈ jeder Achte) → Fehlzuschreibung von Erregung: „Gefahr macht verliebt“.
+- Ende mit Mitmach-Aufruf „MARKIER DEINEN SCHATZ“.
+- Video: `videos/titanic/` (42,8 s, 14 Bilder). Titel: „Warum verliebten sich Jack & Rose so schnell? 🧠❤️ #shorts“.
+
 ### 2026-11-28 (Geld ist nicht alles)
 - Feedback: „Mach mir ein Intersaantes video das geld nicht alles ist! Mach es psychologisch sehr spannend“
 - Neue Regel: „Psychologisch sehr spannend“ = Bogen in Stufen mit Twist: Mythos → echte Studie (Lottogewinner, Brickman 1978) → Mechanismus mit Namen (hedonische Tretmühle) → große Langzeitstudie (Harvard, 80+ Jahre) → **Twist** („Geld macht doch glücklich – wenn du es für andere ausgibst“, Dunn 2008) → Metapher als Pointe (Geld = Benzin, Glück = mit wem du fährst). Musik im Stil „Psycho-Thriller“, der am Ende warm wird.
