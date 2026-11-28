@@ -85,6 +85,11 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Hintergrundmusik)
+- Feedback: „Diesmal will ich, dass du mir eine interessante Hintergrundmusik, die man ein bisschen nur hört, spielen lässt. … Leicht im Hintergrund. Mach es so spannend wie möglich.“
+- Neue Regel: Videos bekommen **leise Hintergrundmusik** (ElevenLabs `eleven_music_v2_5`, instrumental, spannend, ohne Gesang). Mischung: Musik ca. **−22 dB unter der Stimme**, mit Sidechain-Ducking (Musik wird leiser, wenn gesprochen wird), Ein-/Ausblenden. Die Stimme muss immer klar im Vordergrund sein.
+- Video: `videos/regen-rennen/` (39,6 s). Titel: „Im Regen rennen bringt nichts? ❌ #shorts“.
+
 ### 2026-11-28 (keine Serie mehr)
 - Feedback: „Entferne mir das mit diesen 5 Teilen. Es soll immer ein Teil werden.“
 - Geänderte Regel: **Nie mehr Serien.** Jedes Video ist ein Einzelvideo: kein „Fünf …“, kein „Teil x/5“, keine Serienkarte, kein „Und vier davon glaubst du noch“. Ende = Pointe + Abschlusskarte (Kernsatz + „+ Folgen“). Gilt auch, wenn ältere Einträge unten etwas anderes sagen.
@@ -129,7 +134,8 @@ _Neueste Einträge oben._
 2. **Wort-Timing (besser):** Die Sprach-Node mit `creative_transcribe_audio` (Scribe) transkribieren → exakte Wort-Zeitstempel (kostet 0 Credits), siehe `videos/morgens-wach/words.py`. **Alternativ:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
-5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
+5. **Musik (seit 2026-11-28):** `eleven_music_v2_5` instrumental (~45 s, Prompt: spannend, sparsam, Platz für Stimme). Mischen mit `videos/regen-rennen/mix.sh` (Stimme loudnorm −15 LUFS, Musik ×0,16, Sidechain-Ducking) → `mix.m4a`, in `render.js` als Tonspur. Nicht per Scribe auf Gesang prüfen (kostet ca. 250 Credits), stattdessen „Instrumental, no vocals“ in den Prompt.
+6. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
 
 <!-- Format:
 ### JJJJ-MM-TT
