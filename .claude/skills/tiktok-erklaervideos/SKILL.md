@@ -85,6 +85,13 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Mathe)
+- Feedback: „Mach mir ein interessantes Mathematik Beispiel“
+- Neue Regel: Mathe-Themen sind erlaubt. Gewählt: Geburtstagsparadoxon (Mythos „man braucht über 180 Leute“ → 23 reichen für 50,7 %).
+- Neue Regel: Bei Mathe die Grafiken **selbst im Canvas zeichnen** (Neon-Look: leuchtende Punkte, Linien, Kurven, Zähler, die hochzählen), nur 2–4 KI-Bilder für Stimmung. Bilder aus früheren Videos wiederverwenden (z. B. rotes „Falsch“-Bild, Gehirn). Das ist genauer und spart Credits. Großes Wort steht dann **unten (y≈1530)**, damit die Grafik in der Mitte frei bleibt.
+- Zahlen vorher nachrechnen (hier: P(23)=50,7 %, P(30)=70,6 %, P(50)=97,0 %, P(70)=99,9 %, 23·22/2=253 Paare).
+- Video: `videos/geburtstag/` (38,2 s). Titel: „Du brauchst 180 Leute für den gleichen Geburtstag? ❌ #shorts“.
+
 ### 2026-11-28 (Pyramiden, Wikipedia)
 - Feedback: „Erstell mir ein Video wie die Pyramiden gebaut wurden. Als die stärksten Vermutung. Nimm alles von Wikipedia“
 - Neue Regel: Bei „nimm alles von Wikipedia“ nur Fakten verwenden, die in Wikipedia stehen, und Vermutungen als Vermutung sprechen („Die stärkste Vermutung: …“). Kopfzeile/Quelle: „Quelle: Wikipedia (Artikelname)“.
