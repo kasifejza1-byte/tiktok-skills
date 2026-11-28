@@ -85,6 +85,14 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Anime für Erwachsene, 40–50 s)
+- Feedback: „…warum es einen Menschen nervt, wenn der vor ihm langsamer geht. Anime ist so richtig gut, dass man wirklich die Neugier kriegt… Und macht die Hintergrundmusik, dass man sie hört, ein bisschen. Ganz leise sollte man sie hören, aber nicht, dass sie stört. Das Video kann ruhig 40-50 Sekunden dauern.“
+- Neue Regel: **Anime-Stil auch für normale (Erwachsenen-)Videos**, wenn der User es wünscht: ElevenLabs `gpt-image-2.5-sunburst` direkt im **Format 9:16** (Node mit `aspect_ratio: 9:16` anlegen, dann ausführen), eine feste Hauptfigur, erstes Bild als Referenz für alle weiteren. Stimme bleibt Daniel. Darüber Pills, Zahlen, Wort-für-Wort-Untertitel.
+- Geänderte Regel: Länge **40–50 s** ist erlaubt, wenn der User es sagt.
+- Musik: **ganz leise**, hörbar, aber nie störend (Musik-Faktor 0,12 statt 0,16 in `mix.sh`).
+- Video: `videos/langsamgeher/` (50,2 s, 5 Anime-Bilder: a Wunschtempo, b blockiert, c Frust, d selbst müde, e Auto). Titel: „Langsame Leute nerven dich? Du bist nicht ungeduldig ❌ #shorts“.
+- Kosten-Hinweis: Bild ohne Referenz ca. 190 Credits, mit Referenzbild ca. 433 Credits.
+
 ### 2026-11-28 (Hintergrundmusik)
 - Feedback: „Diesmal will ich, dass du mir eine interessante Hintergrundmusik, die man ein bisschen nur hört, spielen lässt. … Leicht im Hintergrund. Mach es so spannend wie möglich.“
 - Neue Regel: Videos bekommen **leise Hintergrundmusik** (ElevenLabs `eleven_music_v2_5`, instrumental, spannend, ohne Gesang). Mischung: Musik ca. **−22 dB unter der Stimme**, mit Sidechain-Ducking (Musik wird leiser, wenn gesprochen wird), Ein-/Ausblenden. Die Stimme muss immer klar im Vordergrund sein.
