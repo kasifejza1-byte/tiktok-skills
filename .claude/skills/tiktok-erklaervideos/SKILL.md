@@ -84,6 +84,9 @@ Ein Thema eignet sich, wenn:
 _Neueste Einträge oben._
 
 ### 2026-11-28
+- Feedback: Video zum Tresorraub Gelsenkirchen gewünscht, „alles, was du weißt“. Gewählt: ca. 60 s, Extra-Video im Story-Stil.
+- Neue Regel: Neben der Serie gibt es Extra-Videos (z. B. echte Kriminalfälle/News). Diese laufen ohne x/5 und ohne Mythos-Hook, erzählt wie ein Krimi, im gleichen Strichmännchen-Stil. Länge ca. 60 s erlaubt.
+- Neue Regel: Bei echten Fällen nur belegte Fakten verwenden, Schätzungen als Schätzungen kennzeichnen, keine Logos echter Firmen zeigen, keine Spekulation über Täter.
 - Feedback: „Ok Kassenbon. Ja so 30 bis 40 sek“ (Thema: Kassenbon / Thermopapier)
 - Geänderte Regel: Ziellänge 30–40 s statt ca. 30 s.
 - Feedback: „das mit dem Feuerzeug habe ich schon gepostet und mit dem Handy auch. Und das ist jetzt halt ein extra Video.“
