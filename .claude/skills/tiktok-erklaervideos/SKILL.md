@@ -85,6 +85,12 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Geld ist nicht alles)
+- Feedback: „Mach mir ein Intersaantes video das geld nicht alles ist! Mach es psychologisch sehr spannend“
+- Neue Regel: „Psychologisch sehr spannend“ = Bogen in Stufen mit Twist: Mythos → echte Studie (Lottogewinner, Brickman 1978) → Mechanismus mit Namen (hedonische Tretmühle) → große Langzeitstudie (Harvard, 80+ Jahre) → **Twist** („Geld macht doch glücklich – wenn du es für andere ausgibst“, Dunn 2008) → Metapher als Pointe (Geld = Benzin, Glück = mit wem du fährst). Musik im Stil „Psycho-Thriller“, der am Ende warm wird.
+- Bei Geld/Glück ehrlich bleiben: nicht „Geld macht unglücklich“ behaupten, sondern „nicht für immer glücklich / gewöhnt sich“.
+- Video: `videos/geld/` (44,8 s, Neon-Stil, 13 Bilder). Titel: „Lottogewinn = für immer glücklich? ❌ #shorts“.
+
 ### 2026-11-28 (Zeit vergeht bei Spaß)
 - Feedback: „Erzähl mir warum die zeit bei geilen sachen schnell vergeht und bei langweiligen nicht“, danach auf „Soll ich ein Video machen?“: „Ja“.
 - Neue Regel: Bei „Erzähl mir …“ zuerst kurz im Chat erklären und dann ein Video anbieten (nicht direkt Credits ausgeben).
