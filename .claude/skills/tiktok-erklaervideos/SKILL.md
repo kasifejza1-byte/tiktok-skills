@@ -43,7 +43,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 - Spätestens nach 4 s kommt der Widerspruch „Das stimmt nicht.“
 
 ## 4. Tempo und Sprache
-- **Ca. 140 Wörter pro Minute** (ca. 2,3 Wörter pro Sekunde), also **165–180 Wörter pro Video**.
+- **Ca. 160 Wörter pro Minute** (ca. 2,6–2,7 Wörter pro Sekunde, geändert 2026-11-28, siehe Feedback; Referenzen hatten ca. 140), also **165–180 Wörter pro Video**.
 - Kurze Hauptsätze, max. ca. 12 Wörter. Duzen.
 - **Alle 2–3 Sekunden ändert sich etwas im Bild:** ein Element erscheint, ein Label ploppt auf oder ein Balken wächst. Harte Schnitte sind selten (0–6 pro Video). Das Tempo entsteht durch fortlaufende Animation in derselben Szene.
 - Zahlen werden **ausgesprochen** und im Bild groß gezeigt. Lieber gerundet und anschaulich („knapp 200 Milligramm“, „fast eine Stunde“).
@@ -84,6 +84,8 @@ Ein Thema eignet sich, wenn:
 _Neueste Einträge oben._
 
 ### 2026-11-28
+- Feedback: „Du musst noch ein bisschen schneller sprechen.“
+- Geänderte Regel: Sprechtempo +15 % (ca. 2,6–2,7 Wörter/s). Umsetzung: Stimme mit `atempo=1.15` beschleunigen, Animation läuft im gleichen Faktor mit (`node render.js full <dauer> 1.15`). Beim Skriptschreiben Länge mit Wörter ÷ 2,6 schätzen.
 - Feedback: Video zum Tresorraub Gelsenkirchen gewünscht, „alles, was du weißt“. Gewählt: ca. 60 s, Extra-Video im Story-Stil.
 - Neue Regel: Neben der Serie gibt es Extra-Videos (z. B. echte Kriminalfälle/News). Diese laufen ohne x/5 und ohne Mythos-Hook, erzählt wie ein Krimi, im gleichen Strichmännchen-Stil. Länge ca. 60 s erlaubt.
 - Neue Regel: Bei echten Fällen nur belegte Fakten verwenden, Schätzungen als Schätzungen kennzeichnen, keine Logos echter Firmen zeigen, keine Spekulation über Täter.
@@ -103,7 +105,7 @@ _Neueste Einträge oben._
 1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
 2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
-4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
+4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full <dauer_s> 1.15` für das Video, Tempo-Faktor 1.15 beschleunigt Stimme und Animation). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.
 
 <!-- Format:
