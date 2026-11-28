@@ -85,6 +85,13 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Comedy-Sketch Polizeikontrolle)
+- Feedback: „Ich mache ein Spaßvideo, wie ich mit meinem Freund spaziere und einen Joint rauche … dann stoppt uns die Polizei … Die fragen uns Sachen und wir antworten komisch zurück, weil wir ja geraucht haben.“ Auswahl: nur angedeutet, Anime, echte Dialoge, Witze von Claude.
+- Neue Regel **Comedy-Sketch**: kein Mythos, keine Studie. Anime-Stil mit festen Figuren (Referenzbild zuerst: du = schwarze Haare, grauer Hoodie; Kumpel = braune Locken, rote Mütze, grüner Hoodie). **Echte Dialoge mit mehreren Stimmen** (`eleven_v4` mit Tags wie [giggles], [sighs], [long pause]): DU = Leon (`KJGvwDt0zADAAvDmMQEN`), KUMPEL = Kermin (`ucRSf046SQyHREQLH4JR`, verpeilt/lustig), POLIZIST = Bob (`uMnwQHEr5ahtueP0PPch`, tief/streng). Jede Zeile einzeln erzeugen, mit `build_audio.py` zusammensetzen (Stille kürzen, Tempo 1,12, Pausen vor Pointen länger) → `timeline.json`.
+- Untertitel: Sprecher-Chip in Farbe (DU cyan, KUMPEL grün, POLIZIST rot) + Satz Wort für Wort, aktuelles Wort farbig. Comic-Sticker („STOPP!“, „*GRILLEN ZIRPEN*“, „GENIE.“), Blaulicht-Flackern, Wackeln bei der Sirene (SFX `eleven_text_to_sound_v2`).
+- **Drogen nur andeuten** (Rauchwolken, rote Augen, Kichern; kein Joint im Bild/Text), sonst schränken TikTok/YouTube die Reichweite ein. Kleine Zeile „Satire · alle Figuren erfunden“.
+- Video: `videos/polizei-sketch/` (49 s, 8 Bilder). Titel: „Wenn die Polizei dich nach einem langen Spaziergang anhält 💀 #shorts“.
+
 ### 2026-11-28 (Liebesfilm-Story)
 - Feedback: „Such dir die Story von einen liebesgfilm und mach ein Video daraus“. Auswahl des Users: Titanic, mit Psycho-Fakt am Ende.
 - Neue Regel **Film-Story-Videos**: Handlung eines bekannten Films **in eigenen Worten** kurz nacherzählen (ca. 20 s), dann Überleitung „Aber warum …? Die Psychologie hat eine Antwort.“ und ein echter Psycho-Fakt mit Studie (ca. 20 s). **Keine Schauspieler-Gesichter, keine Filmszenen nachbauen, keine Logos/Schiffsnamen im Bild**, sondern eigene Neon-Figuren (Aussehen bewusst anders als die Schauspieler). Quelle unten: „Story: Film „…“ (Jahr), frei nacherzählt · Studie: …“.

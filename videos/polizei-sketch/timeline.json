@@ -1,0 +1,121 @@
+[
+{
+"k": "L01",
+"spk": "F",
+"text": "Bro… ist dir mal aufgefallen… Bäume sind eigentlich… stehender Brokkoli?",
+"s": 0.3,
+"e": 7.077
+},
+{
+"k": "L02",
+"spk": "D",
+"text": "Alter… das ist so tief.",
+"s": 7.477,
+"e": 11.422
+},
+{
+"k": "SIREN",
+"spk": "S",
+"text": "",
+"s": 11.722,
+"e": 13.722
+},
+{
+"k": "L03",
+"spk": "P",
+"text": "Guten Abend. Polizeiliche Kontrolle. Wo wollen Sie hin?",
+"s": 13.872,
+"e": 17.097
+},
+{
+"k": "L04",
+"spk": "D",
+"text": "… Nach vorne.",
+"s": 17.447,
+"e": 18.828
+},
+{
+"k": "L05",
+"spk": "P",
+"text": "Wie heißen Sie?",
+"s": 19.278,
+"e": 20.462
+},
+{
+"k": "L06",
+"spk": "F",
+"text": "Ähm… kann ich einen Joker nehmen?",
+"s": 20.712,
+"e": 23.407
+},
+{
+"k": "L07",
+"spk": "P",
+"text": "Haben Sie etwas getrunken oder geraucht?",
+"s": 23.857,
+"e": 25.939
+},
+{
+"k": "L08",
+"spk": "D",
+"text": "Nur Luft. Sehr… viel… Luft.",
+"s": 26.189,
+"e": 29.443
+},
+{
+"k": "L09",
+"spk": "P",
+"text": "Und warum sind Ihre Augen so rot?",
+"s": 29.893,
+"e": 32.03
+},
+{
+"k": "L10",
+"spk": "F",
+"text": "Wir haben die ganze Zeit… an SIE gedacht, Herr Polizei.",
+"s": 32.28,
+"e": 35.47
+},
+{
+"k": "L11",
+"spk": "P",
+"text": "Welcher Tag ist heute?",
+"s": 35.92,
+"e": 37.428
+},
+{
+"k": "L12",
+"spk": "D",
+"text": "Heute.",
+"s": 37.728,
+"e": 38.137
+},
+{
+"k": "L13",
+"spk": "P",
+"text": "Okay. Sie beide kommen mit auf die Wache.",
+"s": 38.737,
+"e": 41.929
+},
+{
+"k": "L14",
+"spk": "F",
+"text": "Gibt's da Snacks?",
+"s": 42.179,
+"e": 43.188
+},
+{
+"k": "L15",
+"spk": "P",
+"text": "… Ja. Kekse.",
+"s": 43.538,
+"e": 45.558
+},
+{
+"k": "L16",
+"spk": "F",
+"text": "LET'S GOOO!",
+"s": 45.808,
+"e": 47.796
+}
+]
