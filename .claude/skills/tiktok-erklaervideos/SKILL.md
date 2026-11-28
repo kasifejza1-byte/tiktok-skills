@@ -85,6 +85,13 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Pyramiden, Wikipedia)
+- Feedback: „Erstell mir ein Video wie die Pyramiden gebaut wurden. Als die stärksten Vermutung. Nimm alles von Wikipedia“
+- Neue Regel: Bei „nimm alles von Wikipedia“ nur Fakten verwenden, die in Wikipedia stehen, und Vermutungen als Vermutung sprechen („Die stärkste Vermutung: …“). Kopfzeile/Quelle: „Quelle: Wikipedia (Artikelname)“.
+- Hinweis: Wikipedia ist in der Cloud-Umgebung gesperrt, der User hat die Freigabe abgelehnt und gesagt: aus Claudes Wissen über die Wikipedia-Artikel arbeiten. Nicht erneut nach der Freigabe fragen.
+- Neon-Stil wieder verwendet (16 Bilder, das rote „Falsch“-Bild aus `videos/gaehnen/img/03.png` wiederverwendet, spart Credits). Info-Boxen `BOXES` für Zahlen (2,3 Mio. Blöcke, 2,5 t, −50 % Kraft).
+- Video: `videos/pyramiden/` (43,8 s). Titel: „Sklaven haben die Pyramiden gebaut? ❌ #shorts“.
+
 ### 2026-11-28 (Neon-Stil nach Beispielvideo)
 - Feedback: User schickt ein Beispielvideo (95 s, Querformat, Thema Langsamgeher/Gehirn): „und so solltest es du mir machen“. Antworten: Hochformat 9:16, neues Thema selbst wählen, ca. 18 Bilder okay.
 - Neue Regel **Neon-Stil** (Standard, wenn der User „so wie das Video“ will):
