@@ -85,6 +85,12 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Zeit vergeht bei Spaß)
+- Feedback: „Erzähl mir warum die zeit bei geilen sachen schnell vergeht und bei langweiligen nicht“, danach auf „Soll ich ein Video machen?“: „Ja“.
+- Neue Regel: Bei „Erzähl mir …“ zuerst kurz im Chat erklären und dann ein Video anbieten (nicht direkt Credits ausgeben).
+- Hinweis: Spracheingabe macht Fehler („Geilenkirchen Erlebnissen“ = „geilen Erlebnissen“). Bei komischen Wörtern kurz nachfragen.
+- Video: `videos/zeit-spass/` (42,6 s, Neon-Stil, 12 Bilder, Info-Boxen „TICK … TICK“, „KAUM TICKS“, „VIELE / KAUM ERINNERUNGEN“). Titel: „Die Zeit vergeht schneller, wenn du Spaß hast? Nur halb wahr ❌ #shorts“.
+
 ### 2026-11-28 (Mathe)
 - Feedback: „Mach mir ein interessantes Mathematik Beispiel“
 - Neue Regel: Mathe-Themen sind erlaubt. Gewählt: Geburtstagsparadoxon (Mythos „man braucht über 180 Leute“ → 23 reichen für 50,7 %).
