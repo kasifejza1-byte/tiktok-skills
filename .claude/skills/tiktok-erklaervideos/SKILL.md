@@ -86,6 +86,8 @@ _Neueste Einträge oben._
 ### 2026-11-28
 - Feedback: „Ok Kassenbon. Ja so 30 bis 40 sek“ (Thema: Kassenbon / Thermopapier)
 - Geänderte Regel: Ziellänge 30–40 s statt ca. 30 s.
+- Feedback: „das mit dem Feuerzeug habe ich schon gepostet und mit dem Handy auch. Und das ist jetzt halt ein extra Video.“
+- Neue Regel: Gepostete Folgen festhalten, damit Nummer und Cliffhanger stimmen: 1/5 Handy nicht wirklich aus, 2/5 Feuerzeug, 3/5 Kassenbon (Thermopapier). Keine Themen doppelt.
 
 ### 2026-11-26
 - Feedback: „mach mir jetzt ein Video, dass 30 Sekunden ungefähr dauert … mit Untertitel … mach es so wie die Videos, die ich dir geschickt habe. So gut wie möglich animieren!“ (Vorlage: Skript „Dein Handy ist nicht wirklich aus“)
