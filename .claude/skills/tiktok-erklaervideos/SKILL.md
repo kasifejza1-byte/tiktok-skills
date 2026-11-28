@@ -17,7 +17,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 ## 1. Format und Länge
 - **Länge: 30–40 s** (geändert 2026-11-28, siehe Feedback), also ca. 80–95 Wörter Sprechtext und ca. 1–2 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
 - **Hochformat 9:16**, Sicherheitsabstand oben (Titelzeile) und rechts (TikTok-Buttons).
-- **Serienformat:** „Fünf Technik-Irrtümer“ (oder ein anderes Fünfer-Thema). Jedes Video ist **eine Folge x/5** und behandelt **genau einen** Irrtum.
+- **Keine Serie** (geändert 2026-11-28, siehe Feedback): Jedes Video ist ein **eigenständiges Einzelvideo**. Kein „Fünf …-Irrtümer“, kein „Teil x/5“, keine Serienkarte, kein Serien-Cliffhanger. Jedes Video behandelt **genau einen** Irrtum.
 - Eine Folge = eine Kernaussage. Keine Nebenthemen.
 
 ## 2. Dramaturgie: der feste Ablauf (Zeitstempel als Richtwert)
@@ -25,14 +25,14 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 |---|---|---|
 | 0–3 s | **Mythos-Hook** | Der Irrtum wird als Satz in Großbuchstaben oben eingeblendet und gleichzeitig gesprochen. Die Figur spielt den Irrtum vor. Beispiel: „Handy über Nacht laden macht den Akku kaputt.“ |
 | 3–5 s | **Bruch** | „Das stimmt nicht.“ Der Hintergrund wird kurz **rot**, das Schlüsselwort im Bild wird **rot durchgestrichen**. |
-| 5–7 s | **Serienkarte** | Titel „Fünf Technik-Irrtümer“, 5 runde Icons mit Kurzlabels, das aktuelle Icon groß und gelb, dazu „x/5“. |
+| ~~5–7 s~~ | ~~**Serienkarte**~~ (entfällt, geändert 2026-11-28) | Titel „Fünf Technik-Irrtümer“, 5 runde Icons mit Kurzlabels, das aktuelle Icon groß und gelb, dazu „x/5“. |
 | 7–17 s | **Alltagsszene mit „du“** | Eine konkrete Situation aus dem Leben des Zuschauers: „Du steckst abends dein Handy ein und denkst: …“. Darin liegt die Wahrheit in einem Satz. |
 | 17–25 s | **Mechanismus** | Wie funktioniert es wirklich? Eine Lupe oder ein Kreis-Zoom ins Gerät mit einem einzigen Schlüsselbegriff. |
 | 25–50 s | **Beweis als Mini-Geschichte** | Test, Studie oder Messung: wer, wo, wie lange, wie viele, was gemessen. **Jede Zahl bekommt ein eigenes Bild** (hochzählen, Figurenreihen, Kalender, Flaggen). |
 | 50–60 s | **Ergebnis-Enthüllung** | Vergleich A gegen B. Erst leere Felder mit „?“, dann füllt sich zuerst A, danach B. Am Ende steht der Faktor („gut 10× so viel“). |
 | 60–68 s | **Praxis und Pointe** | Was der Zuschauer jetzt tun soll (Checkliste mit Häkchen) und eine **Metapher als Schlusspointe** („keine Kläranlage, sondern eine Klimaanlage“, „lebt in einer anderen Zeitzone“). |
 | 68–70 s | **Teilen-Aufruf (optional)** | „Schick das dem, der sagt: ‚…‘“, mit Sprechblase und typischem Spruch. |
-| 70–75 s | **Serien-Cliffhanger** | „Das war [x] von fünf. Und [5−x] davon glaubst du noch.“ Danach wieder die Serienkarte. |
+| ~~70–75 s~~ | ~~**Serien-Cliffhanger**~~ (entfällt, geändert 2026-11-28) | Stattdessen endet das Video mit der Pointe und einer kurzen Abschlusskarte (Kernsatz + „+ Folgen“). |
 | +3 s | Outro | Account-Name, Suchleiste. |
 
 ## 3. Hook-Regeln (die ersten 3 Sekunden)
@@ -57,24 +57,24 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 - **Akzentfarbe Gelb/Orange** (ca. #F2B33D) für Hook-Text, Untertitel, Zahlen und hervorgehobene Labels.
 - **Signalfarben:** Rot = falsch, Gefahr oder Mythos (roter Hintergrund-Tint, rotes X, rote Balken). Grün oder Häkchen = richtig, Tipp.
 - **Untertitel:** **Wort für Wort**, gelb, fett, zentriert im unteren Drittel, synchron zur Stimme.
-- **Kopfzeile während der Erklärung:** kleiner grauer Serientitel („FÜNF TECHNIK-IRRTÜMER“) und darunter eine winzige Quellenzeile (Studie, Test, Hersteller). Das schafft Glaubwürdigkeit.
+- **Kopfzeile während der Erklärung:** kleiner grauer Thementitel (z. B. „TECHNIK-IRRTUM“, „PSYCHO-IRRTUM“, ohne „Fünf“; geändert 2026-11-28) und darunter eine winzige Quellenzeile (Studie, Test, Hersteller). Das schafft Glaubwürdigkeit.
 - **Wiederkehrende Elemente:** Pill-Labels (abgerundete Kästchen mit Stichwort), Lupen-Zoom-Kreis, Tafel mit Diagramm, Balkendiagramme, die von unten wachsen, Figurenreihen für Mengen, Vorher/Nachher nebeneinander.
 - Der Account-Name ist immer klein sichtbar. Bei KI-Animation kommt das Label „AI-generated“ dazu.
 
 ## 6. Spannung bis zum Ende halten
 1. **Offene Schleife ab Sekunde 0:** Der Mythos wird widerlegt, aber das Warum kommt erst später.
-2. **Seriennummer x/5:** Der Zuschauer weiß, dass es mehr gibt, und ordnet die Folge ein.
+2. ~~Seriennummer x/5~~ (entfällt, geändert 2026-11-28).
 3. **Direkte Ansprache:** „du denkst …“ stellt einen persönlichen Bezug her.
 4. **Zahlen tröpfchenweise:** nie alle auf einmal, jede Zahl ein eigener Mini-Moment.
 5. **„?“-Platzhalter:** Das Ergebnis wird angekündigt, bevor es gezeigt wird. Erst A, dann B, dann der Faktor.
 6. **Pointe zum Schluss:** Die stärkste Metapher kommt ganz am Ende und nicht in der Mitte.
-7. **Cliffhanger:** „Und [n] davon glaubst du noch.“ Das führt zu Folgen-Klicks oder Follows. Die Serienkarte am Ende greift den Anfang wieder auf (Loop-Gefühl).
+7. ~~Cliffhanger~~ (entfällt, geändert 2026-11-28). Die Abschlusskarte wiederholt die Pointe in einem Satz.
 
 ## 7. Skript-Vorlage (Ausgabeformat für Claude)
 Wenn der User ein Skript will, liefere eine Tabelle mit den Spalten **Zeit | Sprechtext | Bild/Animation | Einblendung**, nach Abschnitt 2 gegliedert, plus Wortzahl und geschätzte Länge (Wörter ÷ 2,3). Danach folgen 3 alternative Hooks.
 
 ## 8. Themenfilter (Alltagstechnik)
-- (geändert 2026-11-28, siehe Feedback) Auch Psychologie-Irrtümer sind erlaubt (Serie „Fünf Psycho-Irrtümer“).
+- (geändert 2026-11-28, siehe Feedback) Auch Psychologie-Irrtümer sind erlaubt.
 - (geändert 2026-11-28, siehe Feedback) Auch Alltags-Tricks ohne Gerät sind erlaubt (z. B. morgens wacher werden), solange es einen belegbaren Mechanismus und einen konkreten Tipp gibt. Serie dann „Alltags-Tricks“ bzw. Kopfzeile passend zum Thema.
 Ein Thema eignet sich, wenn:
 - es ein **weit verbreiteter Irrtum oder Alltagsrat** ist (Akku, WLAN, Mikrowelle, Kühlschrank, Spülmaschine, Router, Ladegerät, Flugmodus, Standby, Bluetooth …),
@@ -85,11 +85,15 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (keine Serie mehr)
+- Feedback: „Entferne mir das mit diesen 5 Teilen. Es soll immer ein Teil werden.“
+- Geänderte Regel: **Nie mehr Serien.** Jedes Video ist ein Einzelvideo: kein „Fünf …“, kein „Teil x/5“, keine Serienkarte, kein „Und vier davon glaubst du noch“. Ende = Pointe + Abschlusskarte (Kernsatz + „+ Folgen“). Gilt auch, wenn ältere Einträge unten etwas anderes sagen.
+- Umsetzung im Psycho-Video: Serien-Sätze aus der Stimme geschnitten (`voice_cut.mp3`), jetzt 32,4 s.
+
 ### 2026-11-28 (Psycho-Serie)
 - Feedback: „Erstelle mir ein psylogisches video. Ich weis ich habe Technik in meinen skins aber egal mach das mit meine Regeln“
-- Neue Regel: Auch **Psychologie-Themen** sind erlaubt. Neue Serie **„Fünf Psycho-Irrtümer“** im normalen Strichmännchen-Stil (nicht fotorealistisch, das gilt nur für Körper-/Anatomie-Themen). Alle anderen Regeln gelten gleich (Mythos-Hook, Studie als Beweis, x/5, Cliffhanger, Daniel-Stimme, 30–40 s).
-- Geplante Folgen: 1 Wut rauslassen (fertig), 2 Nur 10 % vom Gehirn, 3 Multitasking, 4 Gegensätze ziehen sich an, 5 Linke/rechte Gehirnhälfte.
-- Video: `videos/psycho1-wut/` (38,6 s, Stimme mit Tempo 1,1). Titel: „Wut muss raus, sonst staut sie sich an? ❌ #shorts“.
+- Neue Regel: Auch **Psychologie-Themen** sind erlaubt. Im normalen Strichmännchen-Stil (nicht fotorealistisch, das gilt nur für Körper-/Anatomie-Themen). Alle anderen Regeln gelten gleich (Mythos-Hook, Studie als Beweis, Daniel-Stimme, 30–40 s).
+- Video: `videos/psycho1-wut/` (32,4 s, Stimme mit Tempo 1,1). Titel: „Wut muss raus, sonst staut sie sich an? ❌ #shorts“.
 - Hinweis: Feedback aus früheren Sitzungen liegt teils auf anderen Branches (z. B. Tempo 1,1/1,15, YouTube-Titel, gepostete Folgen). Bei Gelegenheit alles in `main` zusammenführen.
 
 ### 2026-11-28 (Serie „Fünf Handy-Irrtümer“)

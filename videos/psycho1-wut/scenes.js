@@ -1,8 +1,8 @@
-// Serie „Fünf Psycho-Irrtümer“ – Teil 1: „Wut muss raus“
+// Psycho-Irrtum (Einzelvideo, keine Serie): „Wut muss raus“
 // Zeiten = Timeline nach atempo 1.1 (siehe words.json)
 const SRC='Quellen: Bushman 2002 (Pers. Soc. Psychol. Bull.) · Kjærvik & Bushman 2024 (154 Studien)';
 const ORANGE='#F08A3C',BROWN='#8A5A34';
-function headerP(a){if(a<=0)return;x.save();x.globalAlpha*=a;txt('FÜNF PSYCHO-IRRTÜMER',W/2,150,34,'#9AA5BF',800);txt(SRC,W/2,196,21,'#6D7894',600);x.restore();}
+function headerP(a){if(a<=0)return;x.save();x.globalAlpha*=a;txt('PSYCHO-IRRTUM',W/2,150,34,'#9AA5BF',800);txt(SRC,W/2,196,21,'#6D7894',600);x.restore();}
 
 // ---------- Bausteine ----------
 function heart(X,Y,s,col=RED){x.save();x.translate(X,Y);x.scale(s,s);x.beginPath();x.moveTo(0,30);
@@ -40,32 +40,13 @@ function bar(X,base,w,h,col,lbl,val){rr(X-w/2,base-h,w,Math.max(h,2),14);x.fillS
 
 // ---------- Szenen ----------
 // 1 Hook 0–3.55
-function s1(t){const red=redT(t,2.9,3.55);bg(red);ground();hook(['WUT MUSS RAUS,','SONST STAUT','SIE SICH AN.'],t,80);
+function s1(t){const red=redT(t,2.9,3.4);bg(red);ground();hook(['WUT MUSS RAUS,','SONST STAUT','SIE SICH AN.'],t,80);
   const rage=0.5+0.5*Math.sin(t*14);const st=stick(330,GROUND,1.05,{mood:t<2.9?'angry':'shock',handL:[250+rage*10,GROUND-420-rage*20],handR:[420-rage*10,GROUND-420-rage*20]});
   steamHead(st.head[0],st.head[1],t,t<2.9?1:0.3);
   // Druckanzeige „Wut“
   const k=t<2.9?eo(p(t,0.3,2.2)):1;rr(640,GROUND-600,150,520,30);x.fillStyle=DARK;x.fill();x.strokeStyle=WHITE;x.lineWidth=7;x.stroke();
   rr(660,GROUND-100-400*k,110,400*k+0.1,20);x.fillStyle=t<2.9?ORANGE:RED;x.fill();txt('WUT',715,GROUND-40,36,WHITE,900);
   pill('Druck ablassen!',715,GROUND-680,{...popA(t,1.0),size:38,col:YEL,strike:p(t,2.95,3.3)});bigX(715,GROUND-350,90,p(t,3.0,3.35));}
-// 2 Serienkarte 3.55–6.2
-const SERP=['Wut','10 % Hirn','Multitasking','Gegensätze','Links/Rechts'];
-function serIconP(i,X,Y){x.save();x.translate(X,Y);
-  if(i===1)txt('10%',0,3,32,WHITE,900);
-  if(i===2){for(let j=-1;j<=1;j++){rr(j*22-9,-16+Math.abs(j)*6,18,30,4);x.strokeStyle=WHITE;x.lineWidth=4;x.stroke();}}
-  if(i===3){x.lineWidth=12;x.lineCap='butt';x.strokeStyle=RED;x.beginPath();x.arc(0,-2,22,Math.PI,Math.PI*1.5);x.stroke();x.strokeStyle=BLUE;x.beginPath();x.arc(0,-2,22,Math.PI*1.5,0);x.stroke();
-    x.strokeStyle=RED;line(-22,-2,-22,22,RED,12);line(22,-2,22,22,BLUE,12);x.lineCap='round';}
-  if(i===4)txt('L|R',0,3,30,WHITE,900);x.restore();}
-function seriesCard(t,a0,n,nextTxt,end){bg();
-  for(let i=0;i<14;i++){const sx=(i*137)%W,sy=80+(i*91)%420;circ(sx,sy,2+(i%3),`rgba(255,255,255,${0.4+0.4*Math.sin(t*2+i)})`);}
-  const a=popA(t,a0);x.save();x.globalAlpha=a.a;x.translate(W/2,430);x.scale(a.sc,a.sc);txt('FÜNF',0,-100,80,YEL,900);txt('PSYCHO-IRRTÜMER',0,0,80,YEL,900);x.restore();
-  for(let i=0;i<5;i++){const ia=popA(t,a0+0.15+i*0.1);if(ia.a<=0)continue;const X=150+i*195,Y=760,cur=i===n-1,done=end&&i<n;
-    x.save();x.globalAlpha=ia.a;x.translate(X,Y);const sc=ia.sc*(cur?1.22:1);x.scale(sc,sc);circ(0,0,64,['#B4463C','#7A4FB0','#2F8F7A','#2E5AA8','#C98A2A'][i],cur?YEL:WHITE,cur?9:5);
-    if(i===0){flame(0,34,0.21,t);}else serIconP(i,0,0);if(done){circ(44,-44,22,GREEN);checkM(44,-44,26,1,WHITE);}x.restore();
-    txt(SERP[i],X,Y+(cur?108:96),i===2?22:26,cur?YEL:WHITE,800);}
-  popScale(t,a0+0.5,sc=>{x.translate(W/2,990);x.scale(sc,sc);txt(n+'/5',0,0,110,WHITE,900);});
-  if(nextTxt)popScale(t,a0+0.9,sc=>{x.translate(W/2,1150);x.scale(sc,sc);txt(nextTxt,0,0,46,YEL,900);});
-  if(end){const f=popA(t,a0+1.2);const pul=1+0.05*Math.sin(t*7);x.save();x.globalAlpha=f.a;x.translate(W/2,1310);x.scale(f.sc*pul,f.sc*pul);rr(-220,-62,440,124,62);x.fillStyle=RED;x.fill();txt('+ Folgen',0,4,56,WHITE,900);x.restore();}}
-function s2(t){seriesCard(t,3.6,1,null,false);}
 // 3 Kissen + Alarm 6.2–10.9
 function s3(t){bg();headerP(p(t,6.2,6.5));ground();
   const hitPh=t>6.4&&t<9.2?((t-6.4)*2.6)%1:0;const down=hitPh<0.35?eo(hitPh/0.35):1-eo((hitPh-0.35)/0.65);const sq=t>6.4&&t<9.2?Math.max(0,1-Math.abs(hitPh-0.35)*6):0;
@@ -131,5 +112,13 @@ function s8(t){bg(0);headerP(1);ground();
     if(t>31.4){const k=eo(p(t,31.45,32.6));const lx=lerp(1000,W/2+20,k),ly=lerp(GROUND-560,GROUND-140,k)-Math.sin(k*Math.PI)*180;if(k<1)logW(lx,ly,0.9,k*5);}
     const st=stick(170,GROUND,0.9,{mood:'think',handR:[t>31.4&&t<32?300:240,GROUND-260]});
     pill('Rauslassen = Holz nachlegen',W/2,470,{...popA(t,32.55),size:42,col:YEL});}}
-function s9(t){seriesCard(t,33.55,1,'Teil 2: Nur 10 % vom Gehirn? →',true);}
-SCENES=[[0,3.55,s1],[3.55,6.2,s2],[6.2,10.9,s3],[10.9,13.5,s4],[13.5,17.1,s5],[17.1,24.7,s6],[24.7,28.3,s7],[28.3,33.5,s8],[33.5,99,s9]];
+// Outro (ohne Serie)
+function s9(t){bg();for(let i=0;i<14;i++){const sx=(i*137)%W,sy=80+(i*91)%420;circ(sx,sy,2+(i%3),`rgba(255,255,255,${0.4+0.4*Math.sin(t*2+i)})`);}
+  logW(W/2-40,860,0.8,0.12);logW(W/2+40,860,0.8,-0.12);flame(W/2,850,0.9,t);
+  popScale(t,33.55,sc=>{x.translate(W/2,400);x.scale(sc,sc);txt('WUT IST EIN FEUER.',0,0,76,YEL,900);});
+  popScale(t,33.8,sc=>{x.translate(W/2,1010);x.scale(sc,sc);txt('Nicht rauslassen. Runterkühlen.',0,0,48,WHITE,800);});
+  const f=popA(t,34.1);const pul=1+0.05*Math.sin(t*7);x.save();x.globalAlpha=f.a;x.translate(W/2,1220);x.scale(f.sc*pul,f.sc*pul);rr(-220,-62,440,124,62);x.fillStyle=RED;x.fill();txt('+ Folgen',0,4,56,WHITE,900);x.restore();}
+SCENES=[[0,3.4,s1],[3.4,10.9,s3],[10.9,13.5,s4],[13.5,17.1,s5],[17.1,24.7,s6],[24.7,28.3,s7],[28.3,33.5,s8],[33.5,99,s9]];
+
+// Zeit-Mapping: Serien-Teil (3.40–6.15) ist aus der Stimme geschnitten
+const CUT0=3.40,CUT=2.75;const render0=render;window.render=t=>render0(t<CUT0?t:t+CUT);

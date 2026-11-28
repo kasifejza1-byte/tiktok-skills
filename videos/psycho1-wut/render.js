@@ -7,7 +7,7 @@ const {chromium}=require('playwright');const fs=require('fs');const {spawn}=requ
   const grab=async t=>{const d=await pg.evaluate(t=>{render(t);return document.getElementById('c').toDataURL('image/jpeg',0.93);},t);return Buffer.from(d.split(',')[1],'base64');};
   if(mode==='stills'){for(const t of arg.split(',').map(Number)){fs.writeFileSync(`${__dirname}/prev/f_${t.toFixed(2)}.jpg`,await grab(t));}}
   else{const fps=30,dur=Number(arg),N=Math.round(fps*dur);
-    const ff=spawn('ffmpeg',['-y','-loglevel','error','-f','image2pipe','-framerate',String(fps),'-c:v','mjpeg','-i','-','-i',__dirname+'/voice.mp3','-c:v','libx264','-preset','medium','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k','-af','apad','-t',String(dur),'-movflags','+faststart',__dirname+'/out.mp4'],{stdio:['pipe','inherit','inherit']});
+    const ff=spawn('ffmpeg',['-y','-loglevel','error','-f','image2pipe','-framerate',String(fps),'-c:v','mjpeg','-i','-','-i',__dirname+'/voice_cut.mp3','-c:v','libx264','-preset','medium','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k','-af','apad','-t',String(dur),'-movflags','+faststart',__dirname+'/out.mp4'],{stdio:['pipe','inherit','inherit']});
     for(let i=0;i<N;i++){const buf=await grab(i/fps);if(!ff.stdin.write(buf))await new Promise(r=>ff.stdin.once('drain',r));if(i%150==0)console.log('frame',i,'/',N);}
     ff.stdin.end();await new Promise(r=>ff.on('close',r));}
   await b.close();})();
