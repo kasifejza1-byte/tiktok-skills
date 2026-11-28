@@ -15,7 +15,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 - Löse dich nie stillschweigend von einer Regel. Wenn eine Regel für eine Idee nicht passt, sag es und frag nach.
 
 ## 1. Format und Länge
-- **Länge: ca. 30 s** (geändert 2026-11-26, siehe Feedback), also ca. 70–80 Wörter Sprechtext und ca. 1 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
+- **Länge: 30–40 s** (geändert 2026-11-28, siehe Feedback), also ca. 80–95 Wörter Sprechtext und ca. 1–2 s Abspann. Der Ablauf aus Abschnitt 2 wird dafür gestaucht. Die Referenzen hatten 72–75 s.
 - **Hochformat 9:16**, Sicherheitsabstand oben (Titelzeile) und rechts (TikTok-Buttons).
 - **Serienformat:** „Fünf Technik-Irrtümer“ (oder ein anderes Fünfer-Thema). Jedes Video ist **eine Folge x/5** und behandelt **genau einen** Irrtum.
 - Eine Folge = eine Kernaussage. Keine Nebenthemen.
@@ -74,6 +74,7 @@ Dieses Regelwerk stammt aus der Analyse von drei Referenzvideos (Serie „Fünf 
 Wenn der User ein Skript will, liefere eine Tabelle mit den Spalten **Zeit | Sprechtext | Bild/Animation | Einblendung**, nach Abschnitt 2 gegliedert, plus Wortzahl und geschätzte Länge (Wörter ÷ 2,3). Danach folgen 3 alternative Hooks.
 
 ## 8. Themenfilter (Alltagstechnik)
+- (geändert 2026-11-28, siehe Feedback) Auch Alltags-Tricks ohne Gerät sind erlaubt (z. B. morgens wacher werden), solange es einen belegbaren Mechanismus und einen konkreten Tipp gibt. Serie dann „Alltags-Tricks“ bzw. Kopfzeile passend zum Thema.
 Ein Thema eignet sich, wenn:
 - es ein **weit verbreiteter Irrtum oder Alltagsrat** ist (Akku, WLAN, Mikrowelle, Kühlschrank, Spülmaschine, Router, Ladegerät, Flugmodus, Standby, Bluetooth …),
 - es eine **konkrete Zahl oder einen Test** gibt, der ihn widerlegt oder bestätigt,
@@ -82,6 +83,11 @@ Ein Thema eignet sich, wenn:
 
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
+
+### 2026-11-28
+- Feedback: „Erstelle mir ein Video … wie man nicht so müde ist in der Früh … mit besserer Laune in den Tag aufsteht. Mach wieder zwischen 30-40 Sekunden.“
+- Geänderte Regel: Länge 30–40 s statt ca. 30 s.
+- Neue Regel: Themen dürfen auch Alltags-Tricks ohne Technik sein (Video „Morgens wach“ in `videos/morgens-wach/`).
 
 ### 2026-11-26
 - Feedback: „mach mir jetzt ein Video, dass 30 Sekunden ungefähr dauert … mit Untertitel … mach es so wie die Videos, die ich dir geschickt habe. So gut wie möglich animieren!“ (Vorlage: Skript „Dein Handy ist nicht wirklich aus“)
