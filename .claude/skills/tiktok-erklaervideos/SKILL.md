@@ -84,6 +84,11 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Serie „Fünf Handy-Irrtümer“)
+- Feedback: Google-Doc mit 368 Quellen zu „Salt Typhoon“ geschickt, dann: „Mach mir alle 5 Videos“.
+- Neue Regel: Schickt der User eine Quellenliste, daraus eine Fünfer-Serie (Teil x/5) machen; Fakten nur so stark formulieren, wie die Quellen sie tragen.
+- Umsetzung: `videos/handy1-anruf` … `videos/handy5-buerozeiten`, gemeinsame Bausteine in `videos/handy-lib.js` (Mast, Glasfaser, Kernnetz, Gebäude, Tür, Polizist, Hacker, Schloss, Brief/Postkarte, Einstellungs-Schalter, Serienkarte `seriesEnd`). Für neue Serien diese Datei wiederverwenden.
+
 ### 2026-11-28 (Snus statt Snooze)
 - Feedback: „Ich meinte snus nicht snooz“
 - Neue Regel: Wenn ein Thema-Wort mehrdeutig klingt oder per Spracheingabe kommt (z. B. Snus/Snooze), vor der Produktion in einem Satz nachfragen, welches gemeint ist. Das Snooze-Video bleibt als Bonus in `videos/snooze/`.
