@@ -85,6 +85,12 @@ Ein Thema eignet sich, wenn:
 ## 9. Feedback-Log des Users (hat Vorrang)
 _Neueste Einträge oben._
 
+### 2026-11-28 (Was-wäre-wenn: IQ 1000)
+- Feedback: „Was wäre wenn du einen iq von 1000 hättest. Erstelle ein video“
+- Neue Regel **Was-wäre-wenn-Videos**: erst ehrlich einordnen (hier: IQ-Skala Mittel 100, SD 15 → IQ 160 ≈ 1 von 30.000; IQ 1000 = 60 SD → seltener als alle Atome im Universum), dann „Aber stell es dir trotzdem vor“ als klar markiertes Gedankenexperiment, Twist mit Nachteil (Energie: Gehirn ≈ 20 %, niemand versteht deine Witze), emotionale Pointe und **Frage an die Zuschauer** („Was würdest du machen?“ + „Schreib's in die Kommentare“).
+- Grafik im Canvas: leuchtende Glockenkurve mit Markern, Kamera fährt nach rechts ins Leere bis „1000“.
+- Video: `videos/iq-1000/` (45,6 s, 10 neue Bilder + Gehirn-Bild wiederverwendet). Titel: „Was wäre, wenn du einen IQ von 1000 hättest? 🧠 #shorts“.
+
 ### 2026-11-28 (Comedy-Sketch Polizeikontrolle)
 - Feedback: „Ich mache ein Spaßvideo, wie ich mit meinem Freund spaziere und einen Joint rauche … dann stoppt uns die Polizei … Die fragen uns Sachen und wir antworten komisch zurück, weil wir ja geraucht haben.“ Auswahl: nur angedeutet, Anime, echte Dialoge, Witze von Claude.
 - Neue Regel **Comedy-Sketch**: kein Mythos, keine Studie. Anime-Stil mit festen Figuren (Referenzbild zuerst: du = schwarze Haare, grauer Hoodie; Kumpel = braune Locken, rote Mütze, grüner Hoodie). **Echte Dialoge mit mehreren Stimmen** (`eleven_v4` mit Tags wie [giggles], [sighs], [long pause]): DU = Leon (`KJGvwDt0zADAAvDmMQEN`), KUMPEL = Kermin (`ucRSf046SQyHREQLH4JR`, verpeilt/lustig), POLIZIST = Bob (`uMnwQHEr5ahtueP0PPch`, tief/streng). Jede Zeile einzeln erzeugen, mit `build_audio.py` zusammensetzen (Stille kürzen, Tempo 1,12, Pausen vor Pointen länger) → `timeline.json`.
