@@ -85,6 +85,8 @@ Ein Thema eignet sich, wenn:
 _Neueste Einträge oben._
 
 ### 2026-11-28
+- Feedback: „Nein wir haben gesagt daniel“ (Video war mit Leon vertont)
+- Geänderte Regel: Stimme ist immer „Daniel Ruhig und Freundlich“ (`5rcNUqWNX3O3CWtoa74o`).
 - Feedback: „Erstelle mir ein Video … wie man nicht so müde ist in der Früh … mit besserer Laune in den Tag aufsteht. Mach wieder zwischen 30-40 Sekunden.“
 - Geänderte Regel: Länge 30–40 s statt ca. 30 s.
 - Neue Regel: Themen dürfen auch Alltags-Tricks ohne Technik sein (Video „Morgens wach“ in `videos/morgens-wach/`).
@@ -97,8 +99,8 @@ _Neueste Einträge oben._
 - Neue Regel: Fakten im Skript des Users vor der Produktion prüfen und korrigieren, dann dem User sagen, was geändert wurde.
 
 ## 10. Produktions-Pipeline (bewährt)
-1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme „Leon – Friendly German Creator“ (`KJGvwDt0zADAAvDmMQEN`). Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
-2. **Wort-Timing:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
+1. **Stimme:** ElevenLabs, Modell `eleven_multilingual_v2`, Stimme **„Daniel Ruhig und Freundlich“ (`5rcNUqWNX3O3CWtoa74o`)** (geändert 2026-11-28, siehe Feedback). Nicht Leon, nicht die englische Standardstimme „Daniel – Steady Broadcaster“. Download braucht den freigegebenen Host `elevenlabsusercontent.com`.
+2. **Wort-Timing (besser):** Die Sprach-Node mit `creative_transcribe_audio` (Scribe) transkribieren → exakte Wort-Zeitstempel (kostet 0 Credits), siehe `videos/morgens-wach/words.py`. **Alternativ:** Satzpausen mit `ffmpeg silencedetect` (−35 dB, 0,12 s) finden, Wörter je Abschnitt nach Buchstabenzahl verteilen.
 3. **Animation:** HTML-Canvas mit `render(t)` (1080×1920, Schrift Inter 900), per Playwright Bild für Bild mit 30 fps an ffmpeg (H.264, CRF 18, AAC) übergeben.
 4. **Vorlage:** `vorlage/` enthält den Code des ersten Videos („Handy ist nicht wirklich aus“): `words.py` (Timing), `anim.html` (Szenen), `render.js` (`node render.js stills 1.0,5.0` für Vorschaubilder, `node render.js full 33.3` für das Video). Für ein neues Video die Szenen in `anim.html` ersetzen, Bausteine wie `stick`, `phone`, `pill`, `waves`, `mapCard` und `caption` wiederverwenden.
 5. **Prüfen:** Kontaktbogen mit 1 Bild pro Sekunde anschauen, ob Untertitel und Szenen zusammenpassen.

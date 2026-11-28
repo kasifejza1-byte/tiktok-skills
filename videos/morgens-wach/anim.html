@@ -346,12 +346,15 @@ function sceneEnd(t){
     for(let wy=b[1]+30;wy<b[1]+330;wy+=60)for(let wx=b[0]+25;wx<b[0]+b[2]-30;wx+=55){x.fillStyle=((wx*7+wy)%3===0)?'rgba(245,184,61,0.7)':'rgba(120,135,170,0.35)';x.fillRect(wx,wy,26,26);x.fillStyle='rgba(20,32,68,0.95)';}});
 }
 const SCENES=[[0,3.6,sceneHook],[3.6,4.95,sceneBruch],[4.95,10.9,sceneBlood],[10.9,16.85,sceneLux],[16.85,21.45,sceneTip1],[21.45,24.85,sceneTip2],[24.85,29.25,sceneTip3],[29.25,32.4,scenePointe],[32.4,99,sceneEnd]];
-function render(t){
+// Szenen wurden auf die erste Aufnahme getimt; MAP bildet die neue Sprechzeit (Daniel) auf die Szenenzeit ab.
+const MAP=[[0,0],[4.05,3.66],[5.57,5.01],[7.38,7.04],[8.94,8.27],[10.70,10.04],[11.95,10.97],[14.51,13.68],[17.73,16.89],[18.65,17.77],[19.39,18.87],[21.86,21.51],[23.44,23.23],[25.43,24.91],[26.58,26.35],[28.11,27.91],[29.55,29.33],[29.88,30.07],[30.52,31.15],[32.09,32.49],[35.3,35.5]];
+function mapT(t){for(let i=1;i<MAP.length;i++){if(t<=MAP[i][0]){const [a0,b0]=MAP[i-1],[a1,b1]=MAP[i];return b0+(b1-b0)*(t-a0)/(a1-a0);}}return t-35.3+35.5;}
+function render(rt){const t=mapT(rt);
   x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;x.clearRect(0,0,W,H);
   let i=SCENES.findIndex(s=>t>=s[0]&&t<s[1]);if(i<0)i=SCENES.length-1;
   const [a,b,f]=SCENES[i];x.save();f(t);x.restore();
   if(i>0&&t-a<0.2){x=bufX;x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;x.save();SCENES[i-1][2](a-0.001);x.restore();x=mainX;x.save();x.globalAlpha=1-eo((t-a)/0.2);x.drawImage(buf,0,0);x.restore();}
-  x.globalAlpha=1;caption(t);
+  x.globalAlpha=1;caption(rt);
 }
 window.render=render;
 window.setWords=w=>{WORDS=w;};
